@@ -1,0 +1,51 @@
+<html>
+<head>
+ <title>Ml Flask</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+ <nav>
+    <div class="nav-wrapper">
+      <a href="http://127.0.0.1:5000/" class="brand-logo center">Home</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="http://127.0.0.1:5000/bayesinput">Bayes Model</a></li>
+        <li><a href="http://127.0.0.1:5000/tensorinput">RNN Model</a></li>
+        <li><a href="http://127.0.0.1:5000/results">Results</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+ <div class="big" align="center">
+  <form action="http://127.0.0.1:5000/tensormodel" method="POST">
+   <h3>Enter Your document contents Here</h3>
+   <div class="row">
+      <div class="input-field col s12">
+        <input id="docname1" type="text" name="docname1">
+         <label for="docname1">Document Name</label>
+        <textarea name="doc1" ></textarea>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="docname2" type="text" name="docname2">
+        <label for="docname2">Document Name</label>
+        <textarea name="doc2" ></textarea>
+        <br>
+      </div>
+   <div class="row">
+      <div class="input-field col s12">
+        <input id="docname3" type="text" name="docname3">
+        <label for="docname3">Document Name</label>
+        <textarea name="doc3" ></textarea>
+        <br>
+      </div>
+    </div>
+   <input type="submit" name="" value="Predict" class="btn btn-info red accent-2">
+  </form>
+  </div>
+</body>
+</html>
