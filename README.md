@@ -10,3 +10,7 @@ html pages are added in the template folder
 
 sqlite db used
 results populated in a table called results
+
+
+snapshots of the application are saved in the snapshots folder
+
